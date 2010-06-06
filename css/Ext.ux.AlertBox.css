@@ -1,0 +1,99 @@
+/*!
+ * Ext.ux.AlertBox
+ * http://www.artalat.com/
+ */
+
+
+#AlertBox{
+    background:#fcfcfc;
+    padding: 20px;
+    width:400px;
+    border:1px solid #fcfcfc;
+    color:#494848;
+    font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+    position: fixed;
+    z-index: 1000000;
+}
+
+#AlertBox p{
+    font-size:20px;
+    margin: 0;
+}
+
+#AlertBox p.icon{
+    padding-left:90px;
+    background-position: 10px center;
+    background-repeat:  no-repeat;
+    min-height: 48px;
+}
+
+#AlertBox p.error-alertbox_icon { background-image: url(../images/error.png);}
+#AlertBox p.happy-alertbox_icon { background-image: url(../images/happy.png);}
+#AlertBox p.loading-alertbox_icon { background-image: url(../images/loading.gif);}
+#AlertBox p.sad-alertbox_icon { background-image: url(../images/sad.png);}
+#AlertBox p.security-alertbox_icon { background-image: url(../images/security.png);}
+#AlertBox p.smile-alertbox_icon { background-image: url(../images/smile.png);}
+#AlertBox p.success-alertbox_icon { background-image: url(../images/success.png);}
+#AlertBox p.warning-alertbox_icon { background-image: url(../images/warning.png);}
+
+#AlertBox p b{
+    font-size:30px;
+    display:block;
+}
+
+#AlertBox.top{
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#AlertBox.bottom{
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    bottom: 0;
+}
+
+#AlertBox.right{
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    right: 0;
+}
+
+#AlertBox.left{
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#AlertBox .closeBox{
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+    padding:2px 5px;
+    position:absolute;
+    right:6px;
+    top:5px;
+    -moz-border-radius: 15px; /* FF1+ */
+    -webkit-border-radius: 15px; /* Saf3+, Chrome */
+    border-radius: 15px; /* Opera 10.5, IE 9 */
+}
+
+#AlertBox .closeBox:hover {
+    background-color: #eee;
+}
